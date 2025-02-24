@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=34638&format=png&color=000000">
+  <title>Registro de Productos</title>
+  <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+  <h1>Registro de habitación</h1>
+
+  <!-- Formulario para registrar un nuevo producto -->
+  <form id="productForm">
+    <input type="text" id="name" placeholder="Nombre de la habitación" required>
+    <textarea id="description" placeholder="Descripción"></textarea>
+    <input type="number" id="price" placeholder="Precio" required>
+    <button type="submit">Registrar habitación</button>
+  </form>
+
+  <div id="message"></div>
+  <a href="adminMenu.html" class="back-button">Volver al menu</a>
+  </div>
+
+  <h2>Lista de habitaciones</h2>
+  <ul id="productList"></ul>
+
+  <script src="../public/scriptsC.js"></script>
+</body>
+</html>

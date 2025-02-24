@@ -1,0 +1,541 @@
+/*register_producto*/
+/* Estilos básicos del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos del formulario */
+  #productForm {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #productForm input[type="text"],
+  #productForm textarea,
+  #productForm input[type="number"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Fondo blanco para mayor visibilidad */
+    color: #333; /* Color del texto oscuro */
+  }
+  
+  /* Mejora de visibilidad en el textarea */
+  #productForm textarea {
+    min-height: 80px;
+    resize: none; /* Permite ajustar la altura del textarea */
+  }
+  
+  /* Estilo del botón */
+  #productForm button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #productForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Lista de productos */
+  #productList {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  #productList li {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #productList li h3 {
+    margin: 0 0 5px;
+    color: #333;
+  }
+  
+  #productList li p {
+    margin: 0;
+    color: #666;
+  }
+  
+  #productList li .price {
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+
+/*Consultar habitaciones*/
+#productQueryForm {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#productQueryForm input[type="text"],
+#productQueryForm textarea,
+#productQueryForm input[type="number"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Fondo blanco para mayor visibilidad */
+  color: #333; /* Color del texto oscuro */
+}
+
+/* Estilo del botón */
+#productQueryForm button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#productQueryForm button:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de productos */
+#productList {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+#productInfo {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/*Modificar habitaciones*/
+#updateProductForm {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#updateProductForm input[type="text"],
+#updateProductForm textarea,
+#updateProductForm input[type="number"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Fondo blanco para mayor visibilidad */
+  color: #333; /* Color del texto oscuro */
+}
+
+/* Estilo del botón */
+#updateProductForm button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#updateProductForm button:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de productos */
+#productList {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+#updateProductForm textarea {
+  min-height: 80px;
+  resize: none; /* Permite ajustar la altura del textarea */
+}
+
+/*Eliminar habitacion*/
+#deleteProductForm {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#deleteProductForm input[type="number"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Fondo blanco para mayor visibilidad */
+  color: #333; /* Color del texto oscuro */
+}
+
+/* Estilo del botón */
+#deleteProductForm button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#deleteProductForm button:hover {
+  background-color: #0056b3;
+}
+
+#updateProductForm textarea {
+  min-height: 80px;
+  resize: none; /* Permite ajustar la altura del textarea */
+}
+
+
+/*Crear cliente*/
+#clienteForm {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#clienteForm input[type="text"],
+#clienteForm input[type="number"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Fondo blanco para mayor visibilidad */
+  color: #333; /* Color del texto oscuro */
+}
+
+/* Estilo del botón */
+#clienteForm button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#clienteForm button:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de productos */
+#clienteList {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+#clienteList li {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Registro empleado */
+#empleadoForm{
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+  
+#empleadoForm input[type="text"],
+#empleadoForm input[type="number"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Fondo blanco para mayor visibilidad */
+  color: #333; /* Color del texto oscuro */
+}
+  
+/* Estilo del botón */
+#empleadoForm button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+  
+#empleadoForm button:hover {
+  background-color: #0056b3;
+}
+  
+/* Lista de productos */
+#empleadoList {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+}
+  
+#empleadoList li {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Registro reserva */
+#reservaForm{
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+  
+#reservaForm input[type="text"],
+#reservaForm input[type="number"],
+#reservaForm select,
+#reservaForm input[type="date"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Fondo blanco para mayor visibilidad */
+  color: #333; /* Color del texto oscuro */
+}
+  
+/* Estilo del botón */
+#reservaForm button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+  
+#reservaForm button:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de productos */
+#reservaList {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+#reservaList li {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#message {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #333;
+}
+
+/* Botón de "Volver al inicio" */
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.back-button:hover {
+  background-color: #333;
+}
+
+/* Consulta reserva */
+#reservaQueryForm {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#reservaQueryForm input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Fondo blanco para mayor visibilidad */
+  color: #333; /* Color del texto oscuro */
+}
+
+/* Estilo del botón */
+#reservaQueryForm button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#reservaQueryForm button:hover {
+  background-color: #0056b3;
+}
+/* Lista de productos */
+#reservaInfo {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+#reservaInfo {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+
+
+
+

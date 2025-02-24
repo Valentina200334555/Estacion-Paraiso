@@ -1,0 +1,486 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #4caf50;
+}
+
+#posts {
+    background-color: #3D9970;
+}
+
+#usuarios {
+    background-color: #f44336;
+}
+
+
+.carousel img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del carrusel */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    max-height: 500px; /* Limita la altura máxima de las imágenes */
+}
+
+.container{
+    text-align: center;
+}
+
+/* Tarjeta de producto sin cuadro y alineada a la izquierda */
+.product-card {
+    display: flex;
+    background-color: transparent;
+    margin: 20px 0;
+    max-width: 900px;
+    align-items: center;
+}
+
+.product-card1 {
+    display: flex;
+    background-color: transparent;
+    margin: 20px 0;
+    max-width: 990px;
+    align-items: center;
+}
+
+/* Imagen de producto */
+.product-card img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 50px;
+    transition: transform 0.3s ease;
+}
+
+.product-card1 img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: -50px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.03);
+}
+
+.product-card1:hover img {
+    transform: scale(1.03);
+}
+
+/* Contenido de la tarjeta */
+.product-card .card-content {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.product-card1 .card-content1 {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.product-card .card-title {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.product-card1 .card-title1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.product-card .card-description {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 580px;
+}
+
+.product-card1 .card-description1 {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 580px;
+}
+
+/* Botón de la tarjeta */
+.product-card .card-button {
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: fit-content;
+}
+
+
+.product-card .card-button:hover {
+    background-color: #e73670;
+    transform: translateY(-2px);
+}
+
+/* Sección de reservas */
+.reservas-section {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor de contenido */
+.reservas-container {
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro transparente */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: auto;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo de título */
+.reservas-container h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+/* Estilo de párrafo */
+.reservas-container p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #e9ecef;
+}
+
+/* Botón de reserva */
+.btn-reserva {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1em;
+    background-color: #e63946;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.btn-reserva:hover {
+    background-color: #d62839;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo de redes sociales */
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #f8f9fa;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-item {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.social-icon {
+    display: block;
+    font-size: 2em;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #e63946; /* Cambiar color al pasar el mouse */
+}
+
+.social-item span {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #e9ecef;
+}
+
+/*Producto*/
+.productos-section {
+    padding: 50px;
+    background-color: #f8f9fa; /* Fondo claro */
+}
+
+.productos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.productos-container h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #E03E32; /* Color principal */
+}
+
+.categoria {
+    margin-bottom: 50px;
+}
+
+.categoria h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.producto-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.producto-imagen {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px; /* Ajustar la altura para uniformidad */
+    object-fit: cover; /* Mantener proporciones de imagen */
+}
+
+.producto-info {
+    margin: 10px 0;
+}
+
+.producto-titulo {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.producto-descripcion {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #555; /* Color más suave para la descripción */
+}
+
+.producto-precio {
+    font-size: 1.2em;
+    color: #E03E32; /* Un color para resaltar el precio */
+    margin-bottom: 10px; /* Separa del botón */
+}
+
+.btn-producto {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #E03E32;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    text-align: center; /* Centrar texto del botón */
+}
+
+.btn-producto:hover {
+    background: #c32a24; /* Color más oscuro en hover */
+}
+
+
+/*Contacto*/
+/* sección de contacto */
+.contact-section {
+    background-color: #f4f4f9;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.contact-container {
+    max-width: 800px;
+    width: 100%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+  
+/* Encabezado y descripción */
+.contact-container h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+  
+.contact-container p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+  
+/* Información de contacto */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+  
+.info-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: #555;
+}
+  
+.info-item i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #00aaff;
+}
+  
+.info-item p {
+    margin: 0;
+    font-size: 16px;
+}
+  
+/* Estilo del formulario de contacto */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    resize: none;
+}
+
+  
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #00aaff;
+}
+  
+.contact-form button {
+    background-color: #00aaff;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.contact-form button:hover {
+    background-color: #007acc;
+}
+  
+
+/*Registro reserva */
+#reservaForm{
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+    
+  #reservaForm input[type="text"],
+  #reservaForm input[type="number"],
+  #reservaForm select,
+  #reservaForm input[type="date"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Fondo blanco para mayor visibilidad*/ 
+    color: #333; /* Color del texto oscuro*/
+  }
+    
+  /* Estilo del botón */ 
+  #reservaForm button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+    
+  #reservaForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Lista de productos */
+  #reservaList {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  #reservaList li {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+ 
+
+

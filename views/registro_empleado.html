@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=34638&format=png&color=000000">
+  <title>Registro de empleados</title>
+  <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+  <h1>Registro de empleado</h1>
+
+  <!-- Formulario para registrar un nuevo empleado -->
+  <form id="empleadoForm">
+    <input type="text" id="documento" placeholder="Documento del empleado" required>
+    <input type="text" id="nombres" placeholder="Nombre completo" required>
+    <input type="text" id="direccion" placeholder="Dirección" required>
+    <input type="text" id="telefono" placeholder="Teléfono" required>
+    <input type="number" id="salario" placeholder="Salario" required>
+    <button type="submit">Registrar empleado</button>
+  </form>
+
+  <div id="message"></div>
+  <a href="adminMenu.html" class="back-button">Volver al menu</a>
+  </div>
+
+  <h2>Lista de Empleados</h2>
+  <ul id="empleadoList"></ul>
+
+  <script src="../public/empleadoCscript.js"></script>
+</body>
+</html>

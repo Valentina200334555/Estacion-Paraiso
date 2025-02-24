@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estación paraíso</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=34638&format=png&color=000000">
+    <link rel="stylesheet" href="../public/styles2.css">
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Estación paraíso</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="habitaciones.html">Habitaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <button id="usuarios" onclick="location.href='access.html'">Login</button>
+            <button id="posts" onclick="location.href='register.html'">Registro</button>
+        </div>
+    </nav>
+
+    <!-- contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="contact-container">
+          <h2>Contáctanos</h2>
+          <p>¿Tienes preguntas? ¡estamos aquí para ayudarte! contáctanos y obtén toda la información que necesitas para disfrutar de estación paraíso.</p>
+      
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Calle Paraíso 123, Ciudad del Sol, Colombia</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone-alt"></i>
+              <p>+123 456 789</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p>contacto@estacionparaiso.com</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <p>Lunes a Domingo: 8:00 AM - 8:00 PM</p>
+            </div>
+          </div>
+      
+          <form id="formContacto" class="contact-form" action="/enviar-mensaje" method="POST">
+            <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+            <input type="email" id="email" name="email" placeholder="Tu Correo Electrónico" required>
+            <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+          </form>
+        </div>
+    </section>
+ 
+    <section id="reservas" class="reservas-section">
+        <div class="reservas-container">
+            <h2>Reserva tu habitación en estación paraíso</h2>
+            <p>Descubre el descanso y confort que mereces en el corazón de la naturaleza. Estación paraíso es el lugar perfecto para escapar de la rutina.</p>
+            <a href="registro_reserva.html" class="btn-reserva">Reservar ahora</a>
+            
+            <div class="social-media">
+                <h3>Síguenos en nuestras redes sociales</h3>
+                <div class="social-icons">
+                    <div class="social-item">
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" title="Síguenos en Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <span>Facebook</span>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" title="Síguenos en Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <span>Instagram</span>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon" title="Síguenos en Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <span>Twitter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Asegúrate de incluir Font Awesome para los íconos de redes sociales -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap y JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

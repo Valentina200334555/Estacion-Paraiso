@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=34638&format=png&color=000000">
+  <title>Registro de Clientes</title>
+  <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+  <h1>Registro de Cliente</h1>
+
+  <!-- Formulario para registrar un nuevo cliente -->
+  <form id="clienteForm">
+    <input type="text" id="documento" placeholder="Documento del cliente" required>
+    <input type="text" id="nombres" placeholder="Nombre completo" required>
+    <input type="text" id="direccion" placeholder="Dirección" required>
+    <input type="text" id="telefono" placeholder="Teléfono" required>
+    <button type="submit">Registrar cliente</button>
+  </form>
+
+  <div id="message"></div>
+  <a href="adminMenu.html" class="back-button">Volver al menu</a>
+  </div>
+
+  <h2>Lista de Clientes</h2>
+  <ul id="clienteList"></ul>
+
+  <script src="../public/clienteCscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="../public/styles.css">
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=34638&format=png&color=000000">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Registro de Usuario</h1>
+    <form id="registerForm">
+    <input type="text" id="username" placeholder="Nombre de usuario" required>
+    <input type="password" id="password" placeholder="Contraseña" required>
+    <label for="role">Selecciona una opción:</label>
+    <select id="role" required>
+      <option value="user">Usuario</option>
+      <option value="admin">Administrador</option>
+    </select>
+    <button type="submit">Registrar</button>
+  </form>
+  <div id="message"></div>
+  <a href="index.html" class="back-button">Volver al inicio</a>
+  </div>
+
+  <script src="../public/scriptsR.js"></script>
+</body>
+</html>

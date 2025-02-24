@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=34638&format=png&color=000000">
+  <title>Consulta de Habitaciones</title>
+  <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+  <h1>Consulta de reservas de habitaciones</h1>
+
+  <!-- Formulario para consultar una habitación por documento -->
+  <form id="reservaQueryForm">
+    <input type="text" id="documento" placeholder="Documento de la Reserva" required>
+    <button type="submit">Buscar Reserva</button>
+  </form>
+
+  <h2>Información de la Reserva</h2>
+  <div id="reservaInfo"></div>
+  <div id="message"></div>
+  <a href="userMenu.html" class="back-button">Volver al menu</a>
+  </div>
+
+  <h2>Todas las Reservas</h2>
+  <ul id="reservaList"></ul>
+
+  <script src="../public/reservasRscript.js"></script>
+</body>
+</html>

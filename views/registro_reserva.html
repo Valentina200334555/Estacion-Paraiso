@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=34638&format=png&color=000000">
+  <title>Registro de Reserva</title>
+  <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+  <h1>Registro de reserva</h1>
+
+  <!-- Formulario para registrar una nueva reserva -->
+  <form id="reservaForm">
+    <input type="text" id="documento" placeholder="Documento del cliente" required>
+    <input type="date" id="check_in" placeholder="Fecha de entrada" required>
+    <input type="date" id="check_out" placeholder="Fecha de salida" required>
+    
+    <label for="tipo_habitacion">Tipo de habitación:</label>
+    <select id="tipo_habitacion" required>
+      <option value="deluxe">Deluxe</option>
+      <option value="suite_con_vista_al_mar">Suite con vista al mar</option>
+      <option value="economica">Económica</option>
+      <option value="suite_de_lujo">Suite de lujo</option>
+      <option value="doble">Doble</option>
+      <option value="familiar">Familiar</option>
+      <option value="premium">Premium</option>
+    </select>
+
+    <input type="number" id="numero_personas" placeholder="Número de personas" required>
+    <button type="submit">Registrar Reserva</button>
+  </form>
+  <div id="message"></div>
+  <a href="index.html" class="back-button">Volver al inicio</a>
+  </div>
+  <h2>Lista de Reservas</h2>
+  <ul id="reservaList"></ul>
+  <script src="../public/reservasCscript.js"></script>
+
+  
+</body>
+</html>
+
+
+    
+      
+        
+    
